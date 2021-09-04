@@ -1,0 +1,119 @@
+//background-img設定
+.bg-setting{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// header
+.logo{
+    width: 96px;
+    height: 31px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true");
+    background-size: cover;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.footer-logo{
+    width: 96px;
+    height: 31px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA.png?raw=true");
+    background-size: cover;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.nav li{
+    margin: 0 16px;
+    a{
+    color: #707070;
+    &:hover{
+        color: $primary;
+        }
+    }
+}
+.footer-nav li{
+    margin: 8px 0;
+    a{
+    color: #fff;
+    &:hover{
+        color: $secondary;
+        }
+    }
+}
+.footer-social li{
+    padding-left: 8px;
+    a:hover {
+        filter: brightness(80%);
+    }
+}
+.action a{
+    padding: 8px 16px;
+    border: 1px solid $primary;
+    border-radius: 16px;
+    &:hover{
+        color: #fff;
+        background: $primary;
+    }
+}
+
+//立即預約 切換tab
+
+.step-item{
+    padding: 12px 20px;
+    margin: 0 8px;
+    color: $primary;
+    background: $light;
+    border-radius: 16px;
+    &:hover{
+        color: #fff;
+        background: $secondary;
+    }
+
+    @media (min-width: 992px) {
+        padding: 12px 48px;
+        margin: 0 16px;
+    }
+}
+.active{
+    color: #fff;
+    background: $primary;
+}
+
+// 立即預約-課程card
+.card{
+    border-radius: 16px;
+    .card-img-top{
+        border-radius: 16px 16px 0 0;
+        @media (min-width: 576px) {
+            border-radius: 16px 0 0 16px;
+        }
+        @media (min-width: 768px) {
+            border-radius: 16px 16px 0 0;
+        }
+    }
+    .card-title{
+        color: $primary;
+        font-size: 20px;
+    }
+    .card-subtitle{
+        color: $secondary;
+        font-size: 20px;
+    }
+    .card-text{
+        color: $primary;
+    }
+    a{
+        color: #fff;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+//預約須知tablet寬度
+.w445{
+    margin: 0 auto;
+    width: 445px;
+}

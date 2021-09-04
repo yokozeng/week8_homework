@@ -67,14 +67,14 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #907A7B; // $blue !default;
+$secondary:     #C0A4A5; //$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         #F5F0E7; //$gray-100 !default;
+$dark:          #707070; //$gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -252,9 +252,26 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75,  //new
+  4: $spacer * 1,    //* 1.5,  16
+  5: $spacer * 1.25, //* 3,   20
+  6: $spacer * 1.5,  //new    24
+  7: $spacer * 1.75, //new    28
+  8: $spacer * 2,    //new    32
+  9: $spacer * 2.25, //new    36
+  10:$spacer * 2.5,  //new    40
+  11:$spacer * 2.75, //new    44
+  12:$spacer * 3,    //new    48
+  13:$spacer * 3.25, //new    52
+  14:$spacer * 3.5,  //new    56
+  15:$spacer * 3.75, //new    60
+  16:$spacer * 4,    //new    64
+  17:$spacer * 4.25, //new    68
+  18:$spacer * 4.5,  //new    72
+  19:$spacer * 4.75, //new    76
+  20:$spacer * 5,    //new    80
+  24:$spacer * 6,    //new    96
+  25:$spacer * 6.25, //new    100
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
