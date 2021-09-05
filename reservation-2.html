@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Boostrap Index
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pt-5 pb-5">
+    <div class="container position-relative">
+      <a class="logo" href="#">DOYOGA</a>
+      <!-- 漢堡選單按鈕 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 選單內容 -->
+      <!-- mobile -->
+      <ul class="navbar-nav d-none">
+        <li class="nav-item">
+          <a class="nav-link" href="#">課程介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">瑜珈空間</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">當月課表</a>
+        </li>
+        <li class="nav-item d-flex action">
+          <div class="pe-4"><a href="#">立即預約</a></div>
+          <div><a href="#">聯絡我們</a></div>
+        </li>
+
+      </ul>
+      <!-- pc -->
+      <div class="d-none d-xxl-flex align-items-md-center collapse navbar-collapse">
+        <ul class="nav list-unstyled position-absolute top-50 start-50 translate-middle">
+          <li><a href="#">課程介紹</a></li>
+          <li><a href="#">瑜珈空間</a></li>
+          <li><a href="#">當月課表</a></li>
+        </ul>
+        <div class="action list-unstyled d-flex position-absolute top-50 end-0 translate-middle-y">
+          <div class="pe-4"><a href="#">立即預約</a></div>
+          <div><a href="#">聯絡我們</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BS -->
+
+
+
+  
+<div class="container mt-12 mt-md-16 mb-11 mb-md-25">
+    <!-- step -->
+    <h3 class="text-primary text-center mb-6 mb-md-4">立即預約</h3>
+    <ul class="step list-unstyled d-flex justify-content-center mb-8">
+        <li>
+            <a class="step-item" href="reservation-1.html">選擇方案</a>
+        </li>
+        <li>
+            <a class="step-item active" href="reservation-2.html">填寫資料</a>
+        </li>
+        <li>
+            <p class="disable">完成預約</p>
+        </li>
+    </ul>
+    <!-- 填寫資料 -->
+    <p class="text-primary text-center mb-6">你選擇的是 <span class="h5 text-secondary">首次體驗課程-基礎</span></p>
+    <ul class="list-unstyled text-dark w350">
+        <!-- 1. 是否接觸過瑜珈? -->
+        <li class="mb-8">
+            <p class="mb-4">1. 是否接觸過瑜珈?</p>
+            <div class="d-flex">
+                <div class="form-check me-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        是
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        否
+                    </label>
+                </div>
+            </div>
+        </li>
+        <!-- 2. 想改善的生活問題? -->
+        <li class="mb-8">
+            <p class="mb-4">2. 想改善的生活問題?</p>
+            <div class="d-flex mb-4">
+                <div class="form-check me-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        肌耐力不足
+                    </label>
+                </div>
+                <div class="form-check me-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        柔軟度不佳
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        壓力大
+                    </label>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-check me-7">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        姿勢不正
+                    </label>
+                </div>
+                <div class="form-check me-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        睡眠品質差
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        注意力不足
+                    </label>
+                </div>
+            </div>
+        </li>
+        <!-- 3. 每週累積運動量約為多少？ -->
+        <li class="mb-8">
+            <p class="mb-4">3. 每週累積運動量約為多少？</p>
+            <div class="d-flex">
+                <div class="form-check me-8">
+                    <input class="form-check-input" type="radio" name="flexRadioTime" id="flexRadioTime1" checked>
+                    <label class="form-check-label" for="flexRadioTime1" style="width: 100px;">
+                        150 分鐘以上
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioTime" id="flexRadioTime2">
+                    <label class="form-check-label" for="flexRadioTime2">
+                        75~150 分鐘
+                    </label>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-check me-8">
+                    <input class="form-check-input" type="radio" name="flexRadioTime" id="flexRadioTime3">
+                    <label class="form-check-label" for="flexRadioTime3" style="width: 100px;">
+                        30~75 分鐘
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioTime" id="flexRadioTime4">
+                    <label class="form-check-label" for="flexRadioTime4">
+                        30 分鐘以下
+                    </label>
+                </div>
+            </div>
+        </li>
+        <!-- 4. 上課預約報到日 -->
+        <li class="mb-8">
+            <p class="mb-1">4. 上課預約報到日</p>
+           <small>若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</small>
+            <input type="date" class="form-control mt-2" id="formGroupExampleInput" placeholder="Example input placeholder">
+        </li>
+        <!-- 5. 填寫基本資料，完成預約後會寄送通知至電子信箱 -->
+        <li class="mb-8">
+            <p class="mb-4">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+            <form class="row g-0">
+                <!-- 姓名 -->
+                <div class="col-6 pe-1 mb-4">
+                  <label for="inputEmail4" class="form-label mb-2">姓名</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="請輸入您的姓名">
+                </div>
+                <!-- 年齡 -->
+                <div class="col-6 ps-1">
+                  <label for="inputPassword4" class="form-label mb-2">年齡</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="請輸入您的年齡">
+                </div>
+                <!-- 性別 -->
+                <div class="col-3 mb-4">
+                    <label for="inputState" class="form-label">性別</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>女</option>
+                      <option>男</option>
+                      <option>其他</option>
+                    </select>
+                  </div>
+                <div class="col-9">
+                </div>
+                <!-- 電子信箱 -->
+                <div class="col-12 mb-4">
+                  <label for="inputEmail" class="form-label">電子信箱</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
+                </div>
+                <!-- 手機號碼 -->
+                <div class="col-12 mb-8">
+                    <label for="inputMobile" class="form-label">手機號碼</label>
+                    <input type="tel" class="form-control" id="inputMobile" placeholder="0912-345-678">
+                  </div>
+                <!-- 按鈕 -->
+                <div class="col-12">
+                    <a class="btn btn-secondary d-grid text-white" href="reservation-3.html" role="button">送出<a>                
+                </div>
+              </form>
+        </li>
+
+    </ul>
+
+
+
+</div>
+    <footer class="footer bg-primary pt-6 pb-8">
+      <div class="container mb-6">
+        <div class="d-block d-lg-flex justify-content-lg-between">
+          <h4 class="text-white mb-2">現在訂閱，獲得課程優惠碼！</h4>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-12">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-secondary ps-12 pe-12 text-white" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="border-bottom border-white"></div>
+      <div class="container mt-6">
+        <div class="d-flex justify-content-between">
+          <a class="footer-logo" href="#">DOYOGA</a>
+          <ul class="footer-social list-unstyled d-flex">
+            <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-fb.svg" alt="icon-fb" style="width:28px;"></a></li>
+            <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-ig.svg" alt="icon-ig" style="width:28px;"></a></li>
+            <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-line.svg" alt="icon-line" style="width:28px;"></a></li>
+          </ul>
+        </div>
+        <ul class="footer-nav list-unstyled">
+          <li><a href="#">課程介紹</a></li>
+          <li><a href="#">瑜珈空間</a></li>
+          <li><a href="#">當月課表</a></li>
+        </ul>
+        <p class="text-white">© 2021. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+
+    <script src="./assets/js/vendorcs.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

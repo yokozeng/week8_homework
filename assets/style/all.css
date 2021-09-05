@@ -3141,27 +3141,27 @@ progress {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
+  color: #C0A4A5;
   opacity: 1;
 }
 
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #C0A4A5;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: #C0A4A5;
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: #C0A4A5;
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: #C0A4A5;
   opacity: 1;
 }
 
@@ -5973,14 +5973,14 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #826e6f;
-  background-color: #f4f2f2;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  color: #fff;
+  background-color: #907A7B;
+  -webkit-box-shadow: inset 0 -1px 0 #C0A4A5;
+          box-shadow: inset 0 -1px 0 #C0A4A5;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23826e6f'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -6029,7 +6029,7 @@ fieldset:disabled .btn {
 
 .accordion-item {
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #C0A4A5;
 }
 
 .accordion-item:first-of-type {
@@ -17785,7 +17785,7 @@ a {
 
 .step-item {
   padding: 12px 20px;
-  margin: 0 8px;
+  margin: 0 4px;
   color: #907A7B;
   background: #F5F0E7;
   border-radius: 16px;
@@ -17794,6 +17794,13 @@ a {
 .step-item:hover {
   color: #fff;
   background: #C0A4A5;
+}
+
+@media (min-width: 768px) {
+  .step-item {
+    padding: 12px 48px;
+    margin: 0 8px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -17806,6 +17813,28 @@ a {
 .active {
   color: #fff;
   background: #907A7B;
+}
+
+.disable {
+  padding: 12px 20px;
+  margin: 0 4px;
+  color: #fff;
+  background: #dee2e6;
+  border-radius: 16px;
+}
+
+@media (min-width: 768px) {
+  .disable {
+    padding: 12px 48px;
+    margin: 0 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .disable {
+    padding: 12px 48px;
+    margin: 0 16px;
+  }
 }
 
 .card {
@@ -17852,7 +17881,53 @@ a {
 
 .w445 {
   margin: 0 auto;
-  width: 445px;
+  max-width: 445px;
+}
+
+.w350 {
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.form-check-input {
+  border-color: #C0A4A5;
+}
+
+.form-check-input:checked {
+  background-color: #C0A4A5;
+  border-color: #C0A4A5;
+}
+
+.form-control {
+  color: #907A7B;
+  border-color: #C0A4A5;
+}
+
+.form-label, .form-select {
+  color: #907A7B;
+  border-color: #C0A4A5;
+}
+
+.material-icons-check {
+  font-size: 40px;
+  text-align: center;
+}
+
+.accordion {
+  margin: 0 auto;
+  max-width: 345px;
+}
+
+@media (min-width: 576px) {
+  .accordion {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion {
+    max-width: 540px;
+  }
 }
 
 .index__h1 {
