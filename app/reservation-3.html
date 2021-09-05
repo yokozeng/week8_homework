@@ -1,0 +1,57 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: reservation-2
+---
+
+<div class="container mt-12 mt-md-16 mb-11 mb-md-25">
+    <!-- step -->
+    <h3 class="text-primary text-center mb-6 mb-md-4">立即預約</h3>
+    <ul class="step list-unstyled d-flex justify-content-center mb-8">
+        <li>
+            <a class="step-item" href="reservation-1.html">選擇方案</a>
+        </li>
+        <li>
+            <a class="step-item" href="reservation-2.html">填寫資料</a>
+        </li>
+        <li>
+            <a class="step-item active" href="reservation-3.html">完成預約</a>
+        </li>
+    </ul>
+    <!-- 完成預約 -->
+    <div class="text-primary text-center mt-7 mb-8">
+        <span class="material-icons material-icons-check mb-5">check_circle_outline</span>
+        <h5>已完成預約，以下是您的預約資訊:</h5>
+    </div>
+   <!-- 預約資訊(折疊手風琴) -->
+   <div class="accordion mb-6" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            預約資訊
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p class="text-primary mb-4">您預約的是<span class="h5 text-secondary ms-2">首次體驗課程-基礎</span></p>
+            <p class="text-primary mb-2">上課預約報到日：2021/07/21</p>
+            <p class="text-primary mb-2">預約人：Joanne Chen</p>
+            <p class="text-primary mb-2">年齡：18 歲</p>
+            <p class="text-primary mb-2">性別：女</p>
+            <p class="text-primary mb-2">電子信箱：example123@gmail.com</p>
+            <p class="text-primary mb-2">手機號碼：0912-345-678</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- 預約須知 -->
+  <div class="text-primary w350 mb-8">
+    <h5 class="mb-2 text-center">上課注意事項</h5>
+    <p>第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+  </div>
+<!-- 按鈕 -->
+    <a class="btn btn-secondary d-grid text-white w350" href="#" role="button">返回首頁<a>                
+
+
+</div>

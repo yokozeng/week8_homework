@@ -62,13 +62,17 @@
 
 .step-item{
     padding: 12px 20px;
-    margin: 0 8px;
+    margin: 0 4px;
     color: $primary;
     background: $light;
     border-radius: 16px;
     &:hover{
         color: #fff;
         background: $secondary;
+    }
+    @media (min-width: 768px) {
+        padding: 12px 48px;
+        margin: 0 8px;
     }
 
     @media (min-width: 992px) {
@@ -79,6 +83,22 @@
 .active{
     color: #fff;
     background: $primary;
+}
+.disable{
+    padding: 12px 20px;
+    margin: 0 4px;
+    color: #fff;
+    background: $gray-300;
+    border-radius: 16px;
+    @media (min-width: 768px) {
+        padding: 12px 48px;
+        margin: 0 8px;
+    }
+
+    @media (min-width: 992px) {
+        padding: 12px 48px;
+        margin: 0 16px;
+    }
 }
 
 // 立即預約-課程card
@@ -112,8 +132,51 @@
     }
 }
 
-//預約須知tablet寬度
+//預約須知 tablet 寬度
 .w445{
     margin: 0 auto;
-    width: 445px;
+    max-width: 445px;
+}
+
+//預約填寫資料 form 寬度
+.w350{
+    margin: 0 auto;
+    max-width: 350px;
+}
+//修改表單勾選顏色
+.form-check-input{
+    border-color:$secondary;
+}
+.form-check-input:checked {
+    background-color:$secondary;
+    border-color:$secondary;
+}
+//修改表單日期顏色
+.form-control{
+    color: $primary;
+    border-color:$secondary;
+}
+//修改表單label顏色
+.form-label, .form-select{
+    color: $primary;
+    border-color:$secondary;
+}
+
+//訂單完成頁icon
+.material-icons-check{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+//預約資訊 折疊手風琴
+.accordion{
+    margin: 0 auto;
+    max-width: 345px;
+    @media (min-width: 576px) {
+        max-width: 450px;
+    }
+    @media (min-width: 768px) {
+        max-width: 540px;
+    }
 }
